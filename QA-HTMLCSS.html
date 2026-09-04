@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бавовна QA - Тестування на базі мемів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ШАПКА САЙТУ -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h2>Бавовна <span>QA Hub</span></h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Це база</a></li>
+                    <li><a href="#services">Тариф "Генерал"</a></li>
+                    <li><a href="#bug-report">Здати баг СБУ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- ГОЛОВНИЙ ЕКРАН -->
+        <section class="hero">
+            <div class="container">
+                <h2>Добрий вечір, ми з QA!</h2>
+                <h1>Влаштовуємо бавовну багам, піднімаємо релізи без паніки!</h1>
+                <p>Привіт! Я QA-тестувальник, який не просто шукає помилки, а випалює кривий код, як святий Джавелін. Якщо ваш сайт "нєвзлєтаєт" або розробники кажуть, що "воно саме зламалося" - ви прийшли за адресою. Зробимо ваш софт стабільним, бо це основа, це так би мовити... БАЗА!</p>
+                <a href="#bug-report" class="btn">Шукати 2-3 тижні</a>
+            </div>
+        </section>
+
+        <!-- ПРО СТОРІНКУ -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Мета та функції нашої веб-сторінки</h2>
+                <div class="about-content">
+                    <p>Цей лендінг - моя практична робота, де серйозна професія QA Manual поєдналася з найкращими українськими мемами для покращення настрою викладача.<br><br>
+                    <strong>Мета сторінки:</strong> показати навички верстки структури (HTML5) та підключення стильного патріотичного дизайну (CSS3).<br>
+                    <strong>Функції сторінки:</strong> пояснити різницю між хорошим і кривим софтом, показати прайс на антикризове тестування та зібрати доноси на баги через форму зворотного зв'язку.</p>
+                </div>
+                
+                <!-- Мемна фотка: котик-захисник або прапор (використовуємо красивий патріотичний фон) -->
+                <<img class="main-img" src="mem.jpg" alt="Український QA Мем 1">
+>
+            </div>
+        </section>
+
+        <!-- ПОСЛУГИ -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Мій бойовий QA-Райдер</h2>
+                <p class="section-subtitle">Очищаємо ваш софт від нечисті за допомогою ручного тестування:</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Тест "Нєвзлєтаєт" (UI/UX)</h3>
+                        <p class="card-desc"><strong>Кросбраузерний аналіз.</strong> Дивлюся, чому кнопки криві, чому верстка попливла на айфонах і чому користувач замість покупки хоче плакати. Робимо інтерфейс, за який не соромно.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Тест "А я вам зараз покажу" (Глибокий QA)</h3>
+                        <p class="card-desc"><strong>Функціональне тестування.</strong> Знаходжу, звідки на сайт готувався напад багів. Перевіряю всі форми, кошики, реєстрації та ламаю те, що розробники вважали "залізобетонним".</p>
+                    </div>
+                </div>
+
+                <!-- ТАБЛИЦЯ ТАРИФІВ -->
+                <h2>Прайс-лист "Донат на реліз"</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Пакет послуг</th>
+                            <th>Що всередині</th>
+                            <th>Ціна (в гривнях або донатах)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Пакет "Кіт Степан"</td>
+                            <td>Слухаю ваші скарги на сайт, роблю швидкий Smoke Test за кавою</td>
+                            <td>1 000 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Пакет "Генерал Марченко"</td>
+                            <td>Повне руйнування багів, регресійний тест, чистий реліз в прод</td>
+                            <td>5 000 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ФОРМА ЗВОРОТНОГО ЗВ'ЯЗКУ -->
+        <section id="bug-report" class="contact-section">
+            <div class="container">
+                <h2>Знайшов баг? Роби відправку в СБУ (QA версія)</h2>
+                <p>Якщо ваш додаток поводиться як підозрілий об'єкт або прод ліг під час презентації — терміново заповнюйте форму. Виїжджаємо на фікс!</p>
+                <img class="main-img" src="meme.jpg" alt="Український QA Мем 2">
+                <form action="#" method="POST" class="qa-form">
+                    <div class="form-group">
+                        <label for="username">Ваш позивний (Ім'я):</label>
+                        <input type="text" id="username" name="username" placeholder="Наприклад, Голова Миколаївської ОДА" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="useremail">Пошта для шифровок (Email):</label>
+                        <input type="email" id="useremail" name="useremail" placeholder="baza@ukr.net" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bugdescription">Яка координата багу (Опис проблеми)?</label>
+                        <textarea id="bugdescription" name="bugdescription" rows="4" placeholder="Тут кнопка не тицяється, там текст відпав..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Запустити бавовну!</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ПІДВАЛ -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Бавовна QA Hub. Зроблено з українським гумором в рамках навчального курсу. Слава Україні!</p>
+        </div>
+    </footer>
+
+</body>
+</html>

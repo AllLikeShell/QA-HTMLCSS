@@ -1,0 +1,215 @@
+/* 1. Скидання та плавний скрол */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2. Глобальні рок-н-рольні патріотичні кольори (Темна тема) */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0d131a; /* Дуже темний синій фон */
+    color: #e2e8f0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* 3. Header та Навігація */
+header {
+    background-color: #141c26;
+    border-bottom: 2px solid #ffd700; /* Золота лінія прапора */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.logo h2 span {
+    color: #ffd700; /* Жовтий акцент */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* 4. Головний екран Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(13, 19, 26, 0.8), rgba(13, 19, 26, 0.9)), url('https://unsplash.com') no-repeat center center/cover;
+    border-bottom: 1px solid #1e293b;
+}
+
+.hero h2 {
+    color: #ffd700;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    color: #94a3b8;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    background-color: #ffd700; /* Жовта мем-кнопка */
+    color: #0d131a;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #e6c200;
+    transform: translateY(-2px);
+}
+
+/* 5. Картки послуг */
+.services-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.service-card {
+    flex: 1;
+    min-width: 280px;
+    background-color: #141c26;
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 4px solid #ffd700;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.card-desc {
+    color: #94a3b8;
+}
+
+/* 6. Зображення */
+.main-img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 35px auto 0;
+    border-radius: 12px;
+    border: 2px solid #ffd700;
+}
+
+/* 7. Таблиця */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background-color: #141c26;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #1e293b;
+}
+
+th {
+    background-color: #1e293b;
+    color: #ffd700;
+}
+
+/* 8. Форма */
+.qa-form {
+    max-width: 550px;
+    margin-top: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #141c26;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    color: white;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #ffd700;
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+    color: #475569;
+    background-color: #090d12;
+    border-top: 1px solid #141c26;
+}
